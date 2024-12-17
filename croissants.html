@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupcakes</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .content {
+        width: 600px;
+        height: 60vh;
+        /* MARGIN AUTO to horizontally center the element  */
+        margin: 80px auto;
+      }
+      body {
+        color: #694c2f;
+        background-color: #e6d1bc;
+        font-family: Georgia, "Times New Roman", serif;
+        text-align: center;
+      }
+
+      .content .background {
+        background-color: #fef3e8;
+        box-shadow: 0 8px 8px 8px rgb(0, 0, 0, 0.3);
+        border-radius: 6px;
+
+      }
+
+      h2 {
+        color: #67584a;
+        background-color: #d1c0adac;
+        padding: 10px;
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      button {
+        font-size: 40px;
+        border-radius: 6px;
+        background-color: #fef3e8;
+        padding: 0 35px 0 35px;
+        margin-right: 1%;
+        margin-bottom: 20px;
+        margin-left: 1%;
+        border: none;
+        box-shadow: 2px 8px 6px rgb(0, 0, 0, 0.3);
+        font-family: "Cookie";
+        color: #473422;
+        border: 1px solid rgb(173, 166, 166);
+        transition: 0.5s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.05)
+      }
+
+      .go-back {
+        position: fixed;
+        bottom: 8px;
+        left: 1050px;
+        width: 40%;
+        float: right;
+      }
+
+      .go-back img {
+        width: 200px;
+        transition: 0.5s;
+      }
+
+      .go-back img:hover {
+        transform: scale(1.05)
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <script>
+      function flavor(char) {
+        var pic;
+        if (char == 0) {
+          pic = "images/chocolate_croissant.png";
+        } else {
+          pic = "images/smores_croissant.png";
+        }
+        document.getElementById("default_image").src = pic;
+      }
+    </script>
+
+    <div class="content">
+      <div class="background">
+        <img id="default_image" src="images/chocolate_croissant.png" />
+        <h2>Php. 80</h2>
+      </div>
+
+      <div class="flavors">
+        <button class="choco" type="button" onclick="flavor(0)">Choco Croissant</button>
+        <button class="smores" type="button" onclick="flavor(1)">Smores Croissant</button>
+      </div>
+
+      <div class="go-back">
+        <a href="main.html"><img src="images/go_back.png" alt="Go Back Icon"></a>
+      </div>
+
+    </div>
+  </body>
+</html>

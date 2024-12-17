@@ -1,0 +1,78 @@
+body {
+    background-color: #e6d1bc;
+    text-align: center;
+}
+
+.content {
+    width: 720px;
+    height: 700px;
+    margin: auto;
+}
+
+/* LOGO */
+.content img {
+    width: 550px;
+    margin-top: 20px;
+}
+
+.paragraph {
+    margin-top: -20px;
+    color: #694c2f;
+    font-size: 1.4rem;
+}
+
+/* CARDS */
+.card {
+    background-color: #fef3e8;
+    width: 200px;
+    padding: 0px 9px 0px 9px;
+    float: left;
+    margin: 11px;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05)
+}
+
+div .image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 9px;
+    margin-bottom: -80px;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+div a {
+    text-decoration: none;
+    font-family: "Cookie", Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    color: #694c2f;
+}
+
+div .label {
+    margin-top: 85px;
+    margin-bottom: 12px;
+}
+
+/* footer */
+.footer {
+    font-size: 1.2rem;
+    color:#3b2713;
+}
+
+.footer p {
+    padding: 20px;
+    font-weight: 600
+}
+
+i {
+    margin-right: 10px;
+    margin-left: 20px
+}
+
+.card-bottom {
+    margin-bottom: 50px;
+}
